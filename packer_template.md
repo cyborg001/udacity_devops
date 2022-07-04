@@ -18,9 +18,9 @@
 
     "managed_image_resource_group_name": "packer-rg",
     "managed_image_name": "myPackerImage",
-    "azure_tags": {
-        "name": "myPackerImage",
-        "rg": "packer-rg"
+    "azure_tags":{
+        "rg": "packer-rg",
+        "name': "myPackerImage",
     },
     "location": "East US",
     "vm_size": "Standard_D2s_v3"
