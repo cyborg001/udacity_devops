@@ -42,7 +42,9 @@ contrasena
 hsoy67HPT*MG
 
 service principal
-app id: 656dda29-3e00-4532-93e1-e94fec1864d9
-display name: https://odl_user_sp_200170
-secret key: rfV8Q~ewKA89Y95zg7iy.xDhisXNF30H4uvZ3cou
-subscription id: d69af47e-53dd-448d-a185-9d8bc0ffb988
+app id: 6b8533d8-d29a-41c0-b675-62e89fa1e7d4
+display name: https://odl_user_sp_200231
+secret key: jW-8Q~lxisPQN3mF5mU0gV~EvNm1Skz-tWcFRcxY
+subscription id: dac919d0-841b-48ab-84a5-d1735c6aeeeb
+tenant id: f958e84a-92b8-439f-a62d-4f45996b6d07
+tenant domain name: udacityhol.onmicrosoft.com
