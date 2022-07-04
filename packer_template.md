@@ -35,3 +35,14 @@
     "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'"
   }]
 }
+
+usuario de lab azure udacity
+odl_user_200170@udacityhol.onmicrosoft.com
+contrasena
+hsoy67HPT*MG
+
+service principal
+app id: 656dda29-3e00-4532-93e1-e94fec1864d9
+display name: https://odl_user_sp_200170
+secret key: rfV8Q~ewKA89Y95zg7iy.xDhisXNF30H4uvZ3cou
+subscription id: d69af47e-53dd-448d-a185-9d8bc0ffb988
