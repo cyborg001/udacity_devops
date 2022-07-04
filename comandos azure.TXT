@@ -1,0 +1,4 @@
+az group create -l eastus -n udacity-rg
+az vm create -g udacity-rg -n udacity-vm --image UbuntuLTS --generate-ssh-keys -o json --verbose
+
+ssh azureuser@xx.xx.xx.xx

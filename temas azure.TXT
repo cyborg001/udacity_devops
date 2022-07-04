@@ -1,0 +1,71 @@
+guiding principles around security as Devops engineers
+-Deny by default
+-logging(hybrid loggin with AD (azure directory)
+-Encryption
+-Segmentation(segmentar la virtualnetwork en varias subnets pequenas)
+
+
+Network security group rule:
+you can control flow, ports, protocols, ip etc..
+
+when you configure a nsg you need
+
+* name
+* priority ( range from 100 - 4096) the lowers are processed firt, processing stops as soon as rule evaluates to true
+* source or destination
+* protocol 
+* direction
+* port range
+* action (allow or deny action)
+
+Terraform(provisioner tool)
+
+provider "azurerm"{
+	features{}
+}
+[...]
+reource 'azurerm_linux_virtual_machine' 'example'{
+	name = "myVm" 
+	resource_group_name = 'myRG'
+	loaction = "US East"
+	[...]
+	source_image_reference {
+		publiher = "Canonical"
+		offer = "UbuntuServer"
+		sku = '18.04'
+		version = "latest"
+	}
+}
+
+para crear una configuracion terraform:
+- crear folder vacio
+- crear archivo main.tf 
+
+creando varialbes
+
+variable "prefix" {
+	description = "The prefix with should be used for all resources
+	in this example"
+}
+variable "location" {
+ 	description = " The azure region in which all resources in this 
+	example should e created"
+	default = "East US"
+}
+
+comandos en terraform
+terraform init
+terraform plan -out <filename>
+terraform apply
+terraform destroy
+terraform show
+
+
+terrafor avanzado
+modulos: grupo de recursos y datos usados como una unidad
+module "<NAME>" {source = "<PATH>" [...]}
+pueden ser anidados dentro de otros modulos
+can source directly from git
+output variables: espeficy in output.tf
+query with terraform output <variable_name>
+
